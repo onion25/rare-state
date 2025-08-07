@@ -708,17 +708,25 @@ export default function HomePage() {
 
             <Card className="bg-white/80 backdrop-blur-sm border-brand-mediumBlue/20 shadow-2xl">
               <CardContent className="p-8">
-                <form className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div>
-                      <label className="block text-sm font-semibold text-gray-700 mb-3">First Name</label>
-                      <Input placeholder="John" className="border-brand-mediumBlue/20 h-12 text-lg" />
+                <form 
+                  method="POST"
+                  action="https://eor6i7j0moyrzbx.m.pipedream.net"
+                  className="space-y-6"
+                >
+  
+                  <div className="space-y-6">
+                    <div></div>
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div>
+                        <label className="block text-sm font-semibold text-gray-700 mb-3">First Name</label>
+                        <Input placeholder="John" className="border-brand-mediumBlue/20 h-12 text-lg" />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-semibold text-gray-700 mb-3">Last Name</label>
+                        <Input placeholder="Doe" className="border-brand-mediumBlue/20 h-12 text-lg" />
+                      </div>
                     </div>
-                    <div>
-                      <label className="block text-sm font-semibold text-gray-700 mb-3">Last Name</label>
-                      <Input placeholder="Doe" className="border-brand-mediumBlue/20 h-12 text-lg" />
                     </div>
-                  </div>
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-3">Email</label>
                     <Input
@@ -756,7 +764,6 @@ export default function HomePage() {
                 <div className="w-2 h-2 bg-brand-mediumBlue rounded-full"></div>
                 <div className="text-lg font-medium text-gray-700">Українська</div>
                 <div className="w-2 h-2 bg-brand-mediumBlue rounded-full"></div>
-                <div className="text-lg font-medium text-gray-700">Русский</div>
               </div>
             </div>
           </div>
