@@ -177,11 +177,6 @@ export default function HomePage() {
         {/* Centered Content */}
         <div className="container mx-auto px-4 relative z-20">
           <div className="max-w-5xl mx-auto text-center">
-            <div className="flex justify-center mb-6">
-              <Badge className="bg-gradient-to-r from-brand-purple/10 to-brand-mediumBlue/10 text-brand-purple border-brand-purple/20 px-6 py-3 text-base font-medium backdrop-blur-sm bg-white/80">
-                <TrendingUp className="mr-2 h-5 w-5" />🚀 Skyrocket Your Business Growth
-              </Badge>
-            </div>
 
             <h1 className="text-5xl lg:text-7xl xl:text-8xl font-bold mb-8 leading-tight">
               <span className="text-gray-900 drop-shadow-sm">Turn Your Business Into a</span>
@@ -191,15 +186,12 @@ export default function HomePage() {
               </span>
             </h1>
 
-            <p className="text-xl lg:text-2xl text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed font-medium drop-shadow-sm">
-              We don't just do marketing – we engineer explosive growth. Watch your revenue soar with strategies that
-              turn prospects into profits.
-            </p>
+          
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-brand-purple to-brand-mediumBlue hover:from-brand-purple/90 hover:to-brand-mediumBlue/90 text-white text-lg px-8 py-4 shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105"
+                className="bg-gradient-to-r from-brand-purple to-brand-mediumBlue text-white text-lg px-8 py-4 shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105"
               >
                 <Rocket className="mr-3 h-6 w-6" />
                 Submit
@@ -208,7 +200,7 @@ export default function HomePage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-2 border-brand-mediumBlue text-brand-mediumBlue hover:bg-brand-mediumBlue hover:text-white text-lg px-8 py-4 transition-all duration-300 transform hover:scale-105 bg-white/80 backdrop-blur-sm"
+                className="border-2 border-brand-mediumBlue text-brand-mediumBlue text-lg px-8 py-4 transition-all duration-300 transform hover:scale-105 bg-white/80 backdrop-blur-sm"
               >
                 <BarChart3 className="mr-2 h-5 w-5" />
                 See Success Stories
@@ -254,15 +246,9 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-b from-brand-white to-brand-lightBlue/20"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <Badge className="mb-6 bg-brand-lightBlue/50 text-brand-mediumBlue border-brand-mediumBlue/20 px-4 py-2">
-              <Sparkles className="mr-2 h-4 w-4" />
-              Our Growth Arsenal
-            </Badge>
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               The Tools That Build
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-brand-mediumBlue">
-                {" "}
-                Empires
               </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -327,36 +313,7 @@ export default function HomePage() {
                   </li>
                 </ul>
               </CardContent>
-            </Card>
-
-            <Card className="border-0 shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105 bg-gradient-to-br from-white to-brand-purple/20 relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-brand-purple/10 to-transparent rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-500"></div>
-              <CardHeader className="relative z-10">
-                <div className="w-16 h-16 bg-gradient-to-br from-brand-purple to-brand-mediumBlue rounded-2xl flex items-center justify-center mb-6 shadow-lg">
-                  <BarChart3 className="h-8 w-8 text-white" />
-                </div>
-                <CardTitle className="text-2xl text-gray-900 mb-3">Website Development</CardTitle>
-                <CardDescription className="text-gray-600 text-base">
-                  Custom websites that convert visitors into customers and grow your business 24/7.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3 text-gray-700">
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 bg-brand-purple rounded-full mr-3"></div>
-                    Website Creation
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 bg-brand-mediumBlue rounded-full mr-3"></div>
-                    Website Updates & Changes
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 bg-brand-purple rounded-full mr-3"></div>
-                    Performance Optimization
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
+            </Card>         
           </div>
         </div>
       </section>
@@ -505,200 +462,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Pricing Section */}
-      <section id="pricing" className="py-20 relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-lightBlue/20 to-brand-white"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
-            <Badge className="mb-6 bg-brand-mediumBlue/10 text-brand-mediumBlue border-brand-mediumBlue/20 px-4 py-2">
-              <Rocket className="mr-2 h-4 w-4" />
-              Investment in Your Empire
-            </Badge>
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Choose Your
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-brand-mediumBlue">
-                {" "}
-                Growth Level
-              </span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Every empire starts with a single step. Choose the investment level that matches your ambition.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {/* Starter Plan */}
-            <Card className="border-2 border-brand-mediumBlue/20 hover:border-brand-mediumBlue/40 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-brand-lightBlue to-transparent rounded-full -translate-y-16 translate-x-16"></div>
-              <CardHeader className="text-center pb-8 relative z-10">
-                <div className="w-20 h-20 bg-gradient-to-br from-brand-lightBlue to-brand-mediumBlue rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
-                  <Zap className="h-10 w-10 text-white" />
-                </div>
-                <CardTitle className="text-3xl text-gray-900 mb-2">Growth Starter</CardTitle>
-                <CardDescription className="text-gray-600 text-lg">
-                  Perfect for ambitious startups ready to scale
-                </CardDescription>
-                <div className="mt-6">
-                  <span className="text-5xl font-bold text-gray-900">$2,500</span>
-                  <span className="text-gray-600 text-lg">/month</span>
-                </div>
-                <div className="text-sm text-brand-mediumBlue font-medium mt-2">ROI Expected: 300-500%</div>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-4 mb-8">
-                  <li className="flex items-center">
-                    <div className="w-6 h-6 bg-brand-mediumBlue/10 rounded-full flex items-center justify-center mr-3">
-                      <Check className="h-4 w-4 text-brand-mediumBlue" />
-                    </div>
-                    Growth Strategy Blueprint
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-6 h-6 bg-brand-mediumBlue/10 rounded-full flex items-center justify-center mr-3">
-                      <Check className="h-4 w-4 text-brand-mediumBlue" />
-                    </div>
-                    2 High-Impact Campaigns/Month
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-6 h-6 bg-brand-mediumBlue/10 rounded-full flex items-center justify-center mr-3">
-                      <Check className="h-4 w-4 text-brand-mediumBlue" />
-                    </div>
-                    Social Media Domination
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-6 h-6 bg-brand-mediumBlue/10 rounded-full flex items-center justify-center mr-3">
-                      <Check className="h-4 w-4 text-brand-mediumBlue" />
-                    </div>
-                    Weekly Growth Reports
-                  </li>
-                </ul>
-                <Button className="w-full bg-brand-mediumBlue hover:bg-brand-mediumBlue/90 text-white text-lg py-3 shadow-lg hover:shadow-xl transition-all duration-300">
-                  Start Growing Now
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Growth Plan */}
-            <Card className="border-2 border-brand-purple/40 hover:border-brand-purple/60 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 relative overflow-hidden">
-              <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 z-20">
-                <Badge className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-6 py-2 text-sm font-bold shadow-lg">
-                  <Crown className="mr-2 h-4 w-4" />
-                  MOST POPULAR
-                </Badge>
-              </div>
-              <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-brand-purple/20 to-transparent rounded-full -translate-y-20 translate-x-20"></div>
-              <CardHeader className="text-center pb-8 relative z-10 pt-8">
-                <div className="w-20 h-20 bg-gradient-to-br from-brand-purple to-brand-mediumBlue rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl">
-                  <TrendingUp className="h-10 w-10 text-white" />
-                </div>
-                <CardTitle className="text-3xl text-gray-900 mb-2">Empire Builder</CardTitle>
-                <CardDescription className="text-gray-600 text-lg">
-                  For businesses ready to dominate their market
-                </CardDescription>
-                <div className="mt-6">
-                  <span className="text-5xl font-bold text-gray-900">$5,000</span>
-                  <span className="text-gray-600 text-lg">/month</span>
-                </div>
-                <div className="text-sm text-brand-purple font-medium mt-2">ROI Expected: 500-1000%</div>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-4 mb-8">
-                  <li className="flex items-center">
-                    <div className="w-6 h-6 bg-brand-purple/10 rounded-full flex items-center justify-center mr-3">
-                      <Check className="h-4 w-4 text-brand-purple" />
-                    </div>
-                    Everything in Growth Starter
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-6 h-6 bg-brand-purple/10 rounded-full flex items-center justify-center mr-3">
-                      <Check className="h-4 w-4 text-brand-purple" />
-                    </div>
-                    5 Revenue-Exploding Campaigns
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-6 h-6 bg-brand-purple/10 rounded-full flex items-center justify-center mr-3">
-                      <Check className="h-4 w-4 text-brand-purple" />
-                    </div>
-                    Advanced Growth Analytics
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-6 h-6 bg-brand-purple/10 rounded-full flex items-center justify-center mr-3">
-                      <Check className="h-4 w-4 text-brand-purple" />
-                    </div>
-                    Brand Transformation
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-6 h-6 bg-brand-purple/10 rounded-full flex items-center justify-center mr-3">
-                      <Check className="h-4 w-4 text-brand-purple" />
-                    </div>
-                    Dedicated Growth Manager
-                  </li>
-                </ul>
-                <Button className="w-full bg-gradient-to-r from-brand-purple to-brand-mediumBlue hover:from-brand-purple/90 hover:to-brand-mediumBlue/90 text-white text-lg py-3 shadow-xl hover:shadow-2xl transition-all duration-300">
-                  <Rocket className="mr-2 h-5 w-5" />
-                  Build My Empire
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Enterprise Plan */}
-            <Card className="border-2 border-brand-mediumBlue/20 hover:border-brand-mediumBlue/40 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-brand-mediumBlue/20 to-brand-purple/10 rounded-full -translate-y-16 translate-x-16"></div>
-              <CardHeader className="text-center pb-8 relative z-10">
-                <div className="w-20 h-20 bg-gradient-to-br from-brand-mediumBlue via-brand-purple to-yellow-400 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl">
-                  <Shield className="h-10 w-10 text-white" />
-                </div>
-                <CardTitle className="text-3xl text-gray-900 mb-2">Market Dominator</CardTitle>
-                <CardDescription className="text-gray-600 text-lg">
-                  For enterprises ready to own their industry
-                </CardDescription>
-                <div className="mt-6">
-                  <span className="text-5xl font-bold text-gray-900">$10,000</span>
-                  <span className="text-gray-600 text-lg">/month</span>
-                </div>
-                <div className="text-sm text-brand-mediumBlue font-medium mt-2">ROI Expected: 1000%+</div>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-4 mb-8">
-                  <li className="flex items-center">
-                    <div className="w-6 h-6 bg-brand-mediumBlue/10 rounded-full flex items-center justify-center mr-3">
-                      <Check className="h-4 w-4 text-brand-mediumBlue" />
-                    </div>
-                    Everything in Empire Builder
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-6 h-6 bg-brand-mediumBlue/10 rounded-full flex items-center justify-center mr-3">
-                      <Check className="h-4 w-4 text-brand-mediumBlue" />
-                    </div>
-                    Unlimited Growth Campaigns
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-6 h-6 bg-brand-mediumBlue/10 rounded-full flex items-center justify-center mr-3">
-                      <Check className="h-4 w-4 text-brand-mediumBlue" />
-                    </div>
-                    Custom Domination Strategy
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-6 h-6 bg-brand-mediumBlue/10 rounded-full flex items-center justify-center mr-3">
-                      <Check className="h-4 w-4 text-brand-mediumBlue" />
-                    </div>
-                    Multi-Channel Supremacy
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-6 h-6 bg-brand-mediumBlue/10 rounded-full flex items-center justify-center mr-3">
-                      <Check className="h-4 w-4 text-brand-mediumBlue" />
-                    </div>
-                    24/7 VIP Support Team
-                  </li>
-                </ul>
-                <Button className="w-full bg-gradient-to-r from-brand-mediumBlue via-brand-purple to-yellow-400 hover:opacity-90 text-white text-lg py-3 shadow-xl hover:shadow-2xl transition-all duration-300">
-                  <Crown className="mr-2 h-5 w-5" />
-                  Dominate My Market
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+    
 
       {/* Contact Section */}
       <section id="contact" className="py-20 relative overflow-hidden">
@@ -708,19 +472,11 @@ export default function HomePage() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <Badge className="mb-6 bg-brand-purple/10 text-brand-purple border-brand-purple/20 px-4 py-2">
-                <Sparkles className="mr-2 h-4 w-4" />
-                Ready to Explode Your Growth?
-              </Badge>
               <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                Let's Build Your
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-brand-mediumBlue">
-                  {" "}
-                  Success Story
-                </span>
+                Let's Build
               </h2>
               <p className="text-xl text-gray-600">
-                Your competitors are growing. Your customers are waiting. Your empire is calling.
+                Submit your information below to get started.
               </p>
             </div>
 
@@ -765,7 +521,7 @@ export default function HomePage() {
                   </div>
                   <Button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-brand-purple to-brand-mediumBlue hover:from-brand-purple/90 hover:to-brand-mediumBlue/90 text-white text-lg py-4 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+                    className="w-full bg-black text-white text-lg py-4 shadow-xl hover:shadow-2xl transition-all duration-300"
                   >
                     <Rocket className="mr-3 h-6 w-6" />
                     {submitText}
@@ -804,37 +560,23 @@ export default function HomePage() {
                   <div className="text-xs text-brand-purple font-medium">Growth Accelerators</div>
                 </div>
               </div>
-              <p className="text-gray-400 mb-6 leading-relaxed">
-                We don't just grow businesses – we build empires. Join the success revolution.
-              </p>
               <div className="flex space-x-4">
-                <div className="w-10 h-10 bg-brand-purple/20 rounded-lg flex items-center justify-center hover:bg-brand-purple/30 transition-colors cursor-pointer">
-                  <span className="text-brand-purple font-bold">f</span>
-                </div>
-                <div className="w-10 h-10 bg-brand-mediumBlue/20 rounded-lg flex items-center justify-center hover:bg-brand-mediumBlue/30 transition-colors cursor-pointer">
-                  <span className="text-brand-mediumBlue font-bold">in</span>
-                </div>
                 <div className="w-10 h-10 bg-brand-purple/20 rounded-lg flex items-center justify-center hover:bg-brand-mediumBlue/30 transition-colors cursor-pointer">
                   <span className="text-brand-purple font-bold">@</span>
                 </div>
               </div>
             </div>
             <div>
-              <h4 className="font-bold mb-6 text-lg">Growth Services</h4>
+              <h4 className="font-bold mb-6 text-lg">Services</h4>
               <ul className="space-y-3 text-gray-400">
                 <li>
                   <Link href="#" className="hover:text-brand-purple transition-colors">
-                    Meta Ads & Social Media
+                    Instagram and Facebook Ads
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="hover:text-brand-purple transition-colors">
-                    Video Editing & SEO
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-brand-purple transition-colors">
-                    Website Development
+                    Social Media Management
                   </Link>
                 </li>
               </ul>
@@ -844,23 +586,18 @@ export default function HomePage() {
               <ul className="space-y-3 text-gray-400">
                 <li>
                   <Link href="#" className="hover:text-brand-mediumBlue transition-colors">
-                    Success Stories
+                    Cases
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="hover:text-brand-mediumBlue transition-colors">
-                    Join Our Team
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-brand-mediumBlue transition-colors">
-                    Growth Blog
+                    Blog
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h4 className="font-bold mb-6 text-lg">Start Growing</h4>
+              <h4 className="font-bold mb-6 text-lg">Contact Info</h4>
               <ul className="space-y-3 text-gray-400">
                 <li>hello@donichco.com</li>
                 <li>+1 (555) GROW-NOW</li>
@@ -871,8 +608,7 @@ export default function HomePage() {
           </div>
           <div className="border-t border-gray-800 mt-12 pt-8 text-center">
             <p className="text-gray-400">
-              &copy; {new Date().getFullYear()} Donich Co. All rights reserved. Building empires, one business at a
-              time.
+              &copy; {new Date().getFullYear()} Rare State Marketing. All rights reserved. 
             </p>
           </div>
         </div>
