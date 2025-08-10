@@ -28,9 +28,27 @@ import { useState } from "react"
 
 export default function HomePage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [submitText, setSubmitText] = useState("Submit")
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    const formData = new FormData(e.currentTarget)
+  
+    try {
+      await fetch("https://eor6i7j0moyrzbx.m.pipedream.net", {
+        method: "POST",
+        body: formData,
+      })
+      setSubmitText("Received")
+    } catch (err) {
+      console.error("Form submission failed", err)
+    }
+  }
+  
+
 
   return (
-    <div className="min-h-screen bg-brand-white overflow-hidden">
+    <div className="min-h-screen bg-brand-black">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-brand-mediumBlue/10 shadow-sm">
         <div className="container mx-auto px-4 py-4">
@@ -184,7 +202,7 @@ export default function HomePage() {
                 className="bg-gradient-to-r from-brand-purple to-brand-mediumBlue hover:from-brand-purple/90 hover:to-brand-mediumBlue/90 text-white text-lg px-8 py-4 shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105"
               >
                 <Rocket className="mr-3 h-6 w-6" />
-                Launch My Growth Journey
+                Submit
                 <ArrowRight className="ml-3 h-6 w-6" />
               </Button>
               <Button
@@ -708,11 +726,8 @@ export default function HomePage() {
 
             <Card className="bg-white/80 backdrop-blur-sm border-brand-mediumBlue/20 shadow-2xl">
               <CardContent className="p-8">
-                <form 
-                  method="POST"
-                  action="https://eor6i7j0moyrzbx.m.pipedream.net"
-                  className="space-y-6"
-                >
+              <form onSubmit={handleSubmit} className="space-y-6">
+
   
                   <div className="space-y-6">
                     <div></div>
@@ -731,7 +746,7 @@ export default function HomePage() {
                     <label className="block text-sm font-semibold text-gray-700 mb-3">Email</label>
                     <Input
                       type="email"
-                      placeholder="john@yourempire.com"
+                      placeholder="john@company.com"
                       className="border-brand-mediumBlue/20 h-12 text-lg"
                     />
                   </div>
@@ -748,11 +763,15 @@ export default function HomePage() {
                       className="border-brand-mediumBlue/20 min-h-[120px] text-lg"
                     />
                   </div>
-                  <Button className="w-full bg-gradient-to-r from-brand-purple to-brand-mediumBlue hover:from-brand-purple/90 hover:to-brand-mediumBlue/90 text-white text-lg py-4 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                  <Button
+                    type="submit"
+                    className="w-full bg-gradient-to-r from-brand-purple to-brand-mediumBlue hover:from-brand-purple/90 hover:to-brand-mediumBlue/90 text-white text-lg py-4 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+                  >
                     <Rocket className="mr-3 h-6 w-6" />
-                    Launch My Growth Journey
+                    {submitText}
                     <ArrowRight className="ml-3 h-6 w-6" />
-                  </Button>
+                </Button>
+
                 </form>
               </CardContent>
             </Card>
