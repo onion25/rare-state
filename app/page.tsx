@@ -167,11 +167,6 @@ export default function HomePage() {
           <div className="absolute bottom-60 left-1/4">
             <Sparkles className="h-5 w-5 text-yellow-400/60" />
           </div>
-
-          {/* Static Rocket Behind Text */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10">
-            <Rocket className="h-96 w-96 text-brand-purple/20 transform rotate-12" />
-          </div>
         </div>
 
         {/* Centered Content */}
@@ -180,10 +175,6 @@ export default function HomePage() {
 
             <h1 className="text-5xl lg:text-7xl xl:text-8xl font-bold mb-8 leading-tight">
               <span className="text-gray-900 drop-shadow-sm">Turn Your Business Into a</span>
-              <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple via-brand-mediumBlue to-brand-purple drop-shadow-lg">
-                Growth Machine
-              </span>
             </h1>
 
           
@@ -292,7 +283,7 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-gradient-to-br from-brand-mediumBlue to-brand-purple rounded-2xl flex items-center justify-center mb-6 shadow-lg">
                   <Megaphone className="h-8 w-8 text-white" />
                 </div>
-                <CardTitle className="text-2xl text-gray-900 mb-3">Video & SEO Mastery</CardTitle>
+                <CardTitle className="text-2xl text-gray-900 mb-3">Video editing</CardTitle>
                 <CardDescription className="text-gray-600 text-base">
                   Professional video editing and SEO optimization that gets you found and remembered.
                 </CardDescription>
