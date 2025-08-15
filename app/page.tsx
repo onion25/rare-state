@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
+import { reviews } from "./data";
+import { getImageUrl } from '../lib/utils.js';
 import { Textarea } from "@/components/ui/textarea"
 import {
   ArrowRight,
@@ -22,6 +24,7 @@ import {
   Sparkles,
   Crown,
   Award,
+  List,
 } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
@@ -29,6 +32,8 @@ import { useState } from "react"
 export default function HomePage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [submitText, setSubmitText] = useState("Submit")
+  const listItems = reviews
+  }
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -69,6 +74,26 @@ export default function HomePage() {
                 <div className="text-xs text-brand-purple font-medium">Growth Accelerators</div>
               </div>
             </div>
+
+            return (
+              <main style={{ padding: 16 }}>
+                <h1>Reviews</h1>
+                <List />
+                </main>
+                );
+
+                function List() {
+                return (
+                <ul>
+                  {reviews.map((r) => (
+                    <li key={r.id}>
+                      <strong>{r.name}:</strong> {r.review}
+                      </li>
+                    ))}
+                    </ul>
+                  );
+                  }
+
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
@@ -379,6 +404,18 @@ export default function HomePage() {
               <div className="text-white/60 text-sm mt-1">They never leave</div>
             </div>
           </div>
+
+
+
+          
+
+          {/* Success stories exercise */ }
+          <div> Hello world 
+            <div>John Doe</div>
+            <div> ⭐️⭐️⭐️⭐️</div>
+            <div> best service ever</div>
+          </div>
+
 
           {/* Success Stories */}
           <div className="mt-20 grid md:grid-cols-3 gap-8">
